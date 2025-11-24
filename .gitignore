@@ -1,49 +1,23 @@
-# --------------------------------------
-# TRACKED DIRECTORIES (explicitly include)
-# --------------------------------------
+# Ignore everything in this directory
+*
 
-# Projects and Equipment are fully shared
-!/03_Research/02_Projects/
-!/03_Research/07_Equipment/
+# Allow these folders to sync
+!02_Equipment/
+!02_Equipment/**
 
-# Shared subfolders inside category folders
-!/03_Research/03_Experiments/Shared/
-!/03_Research/04_Material/Shared/
-!/03_Research/05_Data_Notes/Shared/
-!/03_Research/06_Attachments/Shared/
+!2025_01_NIH/
+!2025_01_NIH/**
 
-# --------------------------------------
-# IGNORE EVERYTHING ELSE UNDER 03_Research
-# --------------------------------------
+# Allow folder structure (so Git keeps directories)
+!*/ 
 
-/03_Research/*
+# Still ignore local-only files
+9_local/
+9_local/**
 
-# Allow category folders themselves
-!/03_Research/02_Projects/
-!/03_Research/03_Experiments/
-!/03_Research/04_Material/
-!/03_Research/05_Data_Notes/
-!/03_Research/06_Attachments/
-!/03_Research/07_Equipment/
+# Never sync Obsidian system files
+.obsidian/
+.obsidian/**
 
-# Then ignore all personal subfolders
-/03_Research/03_Experiments/* 
-!/03_Research/03_Experiments/Shared/
-
-#/Material
-/03_Research/04_Material/*
-!/03_Research/04_Material/Shared/
-
-#/Data_Notes
-/03_Research/05_Data_Notes/*
-!/03_Research/05_Data_Notes/Shared/
-
-#/Attachments
-/03_Research/06_Attachments/*
-!/03_Research/06_Attachments/Shared/
-
-# --------------------------------------
-# IGNORE LOCAL DATA & CONFIG
-# --------------------------------------
-
-/03_Research/09_local/
+# Ignore Mac system files
+.DS_Store
