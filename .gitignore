@@ -1,0 +1,49 @@
+# --------------------------------------
+# TRACKED DIRECTORIES (explicitly include)
+# --------------------------------------
+
+# Projects and Equipment are fully shared
+!/03_Research/02_Projects/
+!/03_Research/07_Equipment/
+
+# Shared subfolders inside category folders
+!/03_Research/03_Experiments/Shared/
+!/03_Research/04_Material/Shared/
+!/03_Research/05_Data_Notes/Shared/
+!/03_Research/06_Attachments/Shared/
+
+# --------------------------------------
+# IGNORE EVERYTHING ELSE UNDER 03_Research
+# --------------------------------------
+
+/03_Research/*
+
+# Allow category folders themselves
+!/03_Research/02_Projects/
+!/03_Research/03_Experiments/
+!/03_Research/04_Material/
+!/03_Research/05_Data_Notes/
+!/03_Research/06_Attachments/
+!/03_Research/07_Equipment/
+
+# Then ignore all personal subfolders
+/03_Research/03_Experiments/* 
+!/03_Research/03_Experiments/Shared/
+
+#/Material
+/03_Research/04_Material/*
+!/03_Research/04_Material/Shared/
+
+#/Data_Notes
+/03_Research/05_Data_Notes/*
+!/03_Research/05_Data_Notes/Shared/
+
+#/Attachments
+/03_Research/06_Attachments/*
+!/03_Research/06_Attachments/Shared/
+
+# --------------------------------------
+# IGNORE LOCAL DATA & CONFIG
+# --------------------------------------
+
+/03_Research/09_local/
